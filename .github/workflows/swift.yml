@@ -30,17 +30,3 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: swift test --sanitize=thread
-  thread:
-    container:
-      image: vapor/swift:5.1-bionic
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - run: swift test --sanitize=thread
-  address:
-    container:
-      image: vapor/swift:5.1-bionic
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - run: swift test --sanitize=address
