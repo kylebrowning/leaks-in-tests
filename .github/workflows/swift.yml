@@ -9,23 +9,9 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - run: swift test --sanitize=thread
-  xenial-5-0:
-    container:
-      image: vapor/swift:5.0-xenial
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - run: swift test --sanitize=thread
   bionic-5-1:
     container:
       image: vapor/swift:5.1-bionic
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - run: swift test --sanitize=thread
-  bionic-5-0:
-    container:
-      image: vapor/swift:5.0-bionic
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
